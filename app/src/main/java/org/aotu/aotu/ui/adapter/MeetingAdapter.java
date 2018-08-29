@@ -10,12 +10,15 @@ import android.widget.TextView;
 
 import org.aotu.aotu.R;
 import org.aotu.aotu.entity.Meeting;
+import org.aotu.aotu.ui.fragment.MeetingIntroduceFragment;
+import org.aotu.aotu.utils.PageChangeUtil;
 import org.aotu.aotu.utils.ToastUtil;
 
 import java.util.List;
 
 public class MeetingAdapter extends BaseAdapter{
 
+    private Context context;
     private LayoutInflater inflater;
     private List<Meeting> list;
     private int type;
@@ -30,6 +33,7 @@ public class MeetingAdapter extends BaseAdapter{
         this.list = list;
         inflater = LayoutInflater.from(context);
         this.type = type;
+        this.context = context;
     }
 
     @Override
@@ -68,7 +72,7 @@ public class MeetingAdapter extends BaseAdapter{
                 holder.edit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        ToastUtil.shortToast("编辑页面");
+                        PageChangeUtil.replaceFragment(context,R.id.activity_main_content,new MeetingIntroduceFragment());
                     }
                 });
             } else {

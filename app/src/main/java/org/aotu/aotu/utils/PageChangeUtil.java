@@ -11,14 +11,15 @@ public class PageChangeUtil
 
     public static void replaceFragment(Context context, int id, Fragment fragment) {
         AppCompatActivity activity = (AppCompatActivity)context;
+        String fragmentName = fragment.getClass().getName();
         FragmentManager manager = activity.getSupportFragmentManager();
         if (nowFragment == null) {
             nowFragment = fragment;
             manager.beginTransaction().replace(id, fragment).commit();
         }
-        if (!nowFragment.getClass().getName().equals(fragment.getClass().getName())) {
+        if (!nowFragment.getClass().getName().equals(fragmentName)) {
             nowFragment = fragment;
-            manager.beginTransaction().replace(id, fragment).commit();
+            manager.beginTransaction().replace(id, fragment).addToBackStack(fragmentName).commit();
         }
     }
 }

@@ -23,12 +23,4 @@
     <string name="apply_meeting_time">会议时间</string>
     <string name="grade_daily">日报管理</string>
     <string name="grade_weekly">周报管理</string>
-
-    <string-array name="sp_people">
-        <item>测试</item>
-    </string-array>
-
-    <string-array name="sp_time">
-        <item>36周 8.27—9.1</item>
-    </string-array>
 </resources>

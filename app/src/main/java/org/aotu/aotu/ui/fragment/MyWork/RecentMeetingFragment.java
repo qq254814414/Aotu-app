@@ -14,6 +14,9 @@ import android.widget.ListView;
 import org.aotu.aotu.R;
 import org.aotu.aotu.entity.Meeting;
 import org.aotu.aotu.ui.adapter.MeetingAdapter;
+import org.aotu.aotu.ui.fragment.ApplyMeetingFragment;
+import org.aotu.aotu.ui.fragment.MeetingIntroduceFragment;
+import org.aotu.aotu.utils.PageChangeUtil;
 import org.aotu.aotu.utils.ToastUtil;
 
 import java.util.ArrayList;
@@ -40,7 +43,7 @@ public class RecentMeetingFragment extends Fragment{
         recentMeeting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                ToastUtil.shortToast("会议简介");
+                PageChangeUtil.replaceFragment(context,R.id.activity_main_content,new MeetingIntroduceFragment());
             }
         });
     }

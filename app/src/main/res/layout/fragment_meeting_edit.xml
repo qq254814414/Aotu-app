@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll_apply_meeting_theme"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/meeting_theme"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_top_bottom_right"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_meeting_theme"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_top_bottom"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_apply_meeting_people"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_apply_meeting_theme"
+        app:layout_constraintHeight_percent="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/apply_meeting_people"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_l"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_people"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_apply_meeting_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_apply_meeting_people"
+        app:layout_constraintHeight_percent="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:text="@string/apply_meeting_time"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_l"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_time"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_apply_meeting_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll_apply_meeting_time"
+        app:layout_constraintBottom_toTopOf="@+id/bt_apply_meeting"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_l"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:text="会"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="议"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="议"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="题"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_item"
+            android:padding="5dp"
+            android:gravity="top"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:text="修改完成"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bt_apply_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>
