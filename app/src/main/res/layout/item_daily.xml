@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_daily_time"
+        android:layout_width="0dp"
+        android:background="@drawable/border_l"
+        android:layout_weight="0.95"
+        android:gravity="center"
+        android:text="(8月27日)"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_daily_item"
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        android:padding="5dp"
+        android:background="@drawable/border_l"
+        android:text="整体事项，整体事项，整体事项，整体事项，整体事项，整体事项，整体事项"
+        android:layout_height="match_parent" />
+    <EditText
+        android:id="@+id/et_daily_value"
+        android:layout_width="0dp"
+        android:background="@drawable/border_"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:text="0"
+        android:layout_height="match_parent" />
+</LinearLayout>

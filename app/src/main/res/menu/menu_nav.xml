@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/mine">
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_my_work"
+            android:title="@string/my_work" />
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_my_meeting"
+            android:title="@string/my_meeting" />
+    </group>
+    <group android:id="@+id/report_meeting">
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_submit_report"
+            android:title="@string/submit_report" />
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_apply_meeting"
+            android:title="@string/apply_meeting" />
+    </group>
+    <group android:id="@+id/report_manage">
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_grade_daily"
+            android:title="@string/grade_daily"/>
+        <item
+            android:icon="@color/black"
+            android:id="@+id/nav_grade_weekly"
+            android:title="@string/grade_weekly"/>
+    </group>
+</menu>

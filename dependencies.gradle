@@ -1,0 +1,19 @@
+def junitVersion = "4.12"
+def supportVersion = "27.1.1"
+def constraintVersion = "1.1.2"
+def rxJavaVersion = "2.1.9"
+def rxAndroidVersion = "2.0.1"
+def okhttpVersion = "3.9.1"
+def retrofitVersion = "2.3.0"
+def fastJsonVersion = "1.2.47"
+def fastJsonConverter = "2.1.0"
+
+project.ext {
+    depend_lib = [
+            "junit"             : "junit:junit:${junitVersion}",
+            "appcompat-v7"      : "com.android.support:appcompat-v7:${supportVersion}",
+            "design"            : "com.android.support:design:${supportVersion}",
+            "cardview"          : "com.android.support:cardview-v7:${supportVersion}",
+            "constraint-layout" : "com.android.support.constraint:constraint-layout:${constraintVersion}"
+    ]
+}
