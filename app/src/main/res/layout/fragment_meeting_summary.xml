@@ -19,7 +19,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_meeting_theme"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:gravity="top"
             android:layout_width="0dp"
             android:layout_weight="5"
@@ -42,7 +42,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_people"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:gravity="top"
             android:layout_width="0dp"
             android:layout_weight="5"
@@ -65,7 +65,7 @@
             android:layout_height="match_parent" />
         <TextView
             android:id="@+id/tv_time"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:gravity="top"
             android:layout_width="0dp"
             android:layout_weight="5"
@@ -109,7 +109,7 @@
         </LinearLayout>
         <TextView
             android:id="@+id/tv_item"
-            android:padding="5dp"
+            android:padding="@dimen/x5"
             android:gravity="top"
             android:layout_width="0dp"
             android:layout_weight="5"

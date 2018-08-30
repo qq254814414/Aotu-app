@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
     <EditText
         android:id="@+id/et_daily"
-        android:padding="8dp"
+        android:padding="@dimen/x8"
         android:gravity="top"
         android:background="@drawable/border_top_bottom"
         android:layout_width="0dp"

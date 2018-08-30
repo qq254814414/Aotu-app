@@ -16,7 +16,7 @@
         android:id="@+id/tv_daily_item"
         android:layout_width="0dp"
         android:layout_weight="3.5"
-        android:padding="5dp"
+        android:padding="@dimen/x5"
         android:background="@drawable/border_l"
         android:text="整体事项，整体事项，整体事项，整体事项，整体事项，整体事项，整体事项"
         android:layout_height="match_parent" />
